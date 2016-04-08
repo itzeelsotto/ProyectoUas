@@ -22,8 +22,8 @@ class EjemploController extends Controller{
 		$temas=Temas::where('id_materias','=', $id)->get();
 		$view=\View::make('PDF',compact('carrera','materia','temas'))->render();
 		$pdf=\App::make('dompdf.wrapper');
-		$pdf->loadHTML('Temas');
-		return $pdf->stream();
+		$pdf->loadHTML($view);
+		return $pdf->stream('Temas');
 	}
 	public function Materias($id){
 		$carreras=Carrera::all();

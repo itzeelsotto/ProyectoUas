@@ -12,6 +12,7 @@
 */
 Route::get('/','EjemploController@index');
 Route::get('/materias/{id}','EjemploController@Materias');
+Route::get('/temas/{id}','EjemploController@Temas');
 Route::get('/PDF/{id}', 'EjemploController@PDF');
 
 

@@ -9,7 +9,7 @@
             <div class="content">
                 <div class="col-xs-12">
                     <h1>Universidad Autónoma de Sinaloa</h1>
-                    <img src="img/logo-uas.png"WIDTH=100 HEIGHT=100 alt="">
+
                     <hr>
                  </div>
                 <div class="col-xs-4"> 
