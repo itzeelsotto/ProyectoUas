@@ -10,8 +10,8 @@
 	<br>
 	<h2>MATERIA: {{$materia->nombre}}</h2>
 	<br>
-	<h3>TEMAS: @foreach($temas as $Tema)
-	{{$Tema->nombre}}</h3>
+	<h3>TEMAS:</h3> <br>@foreach($temas as $Tema)
+	{{$Tema->nombre}}
 	<br>
 	@endforeach
 

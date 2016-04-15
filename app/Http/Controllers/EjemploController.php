@@ -23,7 +23,7 @@ class EjemploController extends Controller{
 		$view=\View::make('PDF',compact('carrera','materia','temas'))->render();
 		$pdf=\App::make('dompdf.wrapper');
 		$pdf->loadHTML($view);
-		return $pdf->stream('Temas');
+		return $pdf->stream('Tema');
 	}
 	public function Materias($id){
 		$carreras=Carrera::all();
